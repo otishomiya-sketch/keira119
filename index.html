@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>苫小牧 くるまの警告灯119番 | LINEで無料診断</title>
+  <meta name="description" content="警告灯が点灯したら、まず公式LINEへ。25年のベテラン整備士が即時診断。DPFドライアイス洗浄で圧倒的コストダウン。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            base: '#FFFFFF',
+            main: '#E63946',
+            sub: '#1D3557',
+            accent: '#FFB703',
+          },
+          fontFamily: {
+            sans: ['"Noto Sans JP"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    /* AOS風：スクロール連動フェードイン（CSS Scroll-Driven Animations） */
+    @keyframes lp-reveal {
+      from {
+        opacity: 0;
+        transform: translateY(28px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .lp-section {
+      opacity: 0.85;
+      transform: translateY(20px);
+      animation: lp-reveal 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 35%;
+    }
+
+    @supports not (animation-timeline: view()) {
+      .lp-section {
+        opacity: 1;
+        transform: none;
+        animation: lp-reveal-fallback 0.85s ease-out both;
+      }
+      @keyframes lp-reveal-fallback {
+        from {
+          opacity: 0;
+          transform: translateY(24px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    }
+
+    /* CTA：黒の斜線ストライプ枠 */
+    .cta-stripe-border {
+      border: 4px solid #000;
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 6px,
+        rgba(0, 0, 0, 0.12) 6px,
+        rgba(0, 0, 0, 0.12) 12px
+      );
+      background-origin: border-box;
+      background-clip: padding-box;
+      box-shadow: inset 0 0 0 4px #FFB703;
+    }
+
+    /* 波形セパレーター反転用 */
+    .wave-flip {
+      transform: rotate(180deg);
+    }
+
+    /* スマホ用フッター分の余白 */
+    @media (max-width: 767px) {
+      body {
+        padding-bottom: 9rem;
+      }
+    }
+
+  </style>
+</head>
+<body class="bg-base text-sub antialiased overflow-x-hidden">
+  <!-- ========== Hero（ヘッダー＋画像） ========== -->
+  <header class="lp-section relative bg-white overflow-hidden">
+    <h1 class="sr-only">苫小牧 くるまの警告灯119番 — 警告灯の無料相談・LINEで写真診断</h1>
+    <div class="mx-auto w-full max-w-lg md:max-w-2xl lg:max-w-4xl shadow-md md:shadow-xl">
+      <!-- ヘッダーバー（ロゴ左・電話CTA右） -->
+      <div
+        class="flex items-center justify-between gap-2 border-b border-slate-200 bg-white px-2.5 py-2.5 sm:gap-4 sm:px-4 sm:py-3"
+      >
+        <a href="#" class="flex min-w-0 flex-1 items-center gap-2 sm:gap-3">
+          <span class="relative flex h-[52px] w-[52px] flex-shrink-0 items-center justify-center sm:h-14 sm:w-14" aria-hidden="true">
+            <img
+              src="assets/ヘッダー.webp"
+              alt=""
+              width="56"
+              height="56"
+              class="h-full w-full object-contain object-left"
+              decoding="async"
+            />
+          </span>
+          <span class="min-w-0 leading-tight">
+            <span class="block text-[10px] font-bold text-black sm:text-xs">苫小牧</span>
+            <span class="mt-0.5 block text-[clamp(0.8rem,2.8vw,1.35rem)] font-black leading-none tracking-tight text-black">
+              くるまの警告灯<span class="text-main">119番</span>
+            </span>
+          </span>
+        </a>
+        <div class="flex max-w-[58%] shrink-0 flex-col items-stretch gap-1.5 sm:max-w-none sm:flex-row sm:items-center sm:gap-2">
+          <a
+            href="#"
+            class="inline-flex items-center justify-center gap-1 rounded-full bg-[#06C755] px-2.5 py-2 text-[10px] font-bold leading-tight text-white shadow-md transition-transform hover:scale-105 sm:gap-2 sm:px-4 sm:py-3 sm:text-sm"
+          >
+            <span class="flex h-4 w-4 shrink-0 items-center justify-center rounded-sm bg-white sm:h-5 sm:w-5" aria-hidden="true">
+              <svg class="h-3 w-3 sm:h-3.5 sm:w-3.5" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="#06C755"
+                  d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.345.281-.63.63-.63.076 0 .156.023.224.06.239.133.387.38.387.635v2.043l2.395-3.024c.101-.129.257-.209.427-.209.061 0 .125.012.188.04.277.111.415.391.329.662-.021.063-.057.121-.103.171l-2.018 2.553 2.603 3.381c.151.195.17.455.053.662zm-4.885.125c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629v-4.89c0-.345.282-.63.63-.63.347 0 .628.285.628.63v4.89zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.25h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.973 4.114 9.053 9.555 9.73.372.08.879.244.995.562.115.317.079.812.038 1.129l-.164 1.02c-.045.301-.24 1.186 1.049.647 1.291-.539 6.916-4.086 9.436-6.975C23.176 14.393 24 12.458 24 10.314"
+                />
+              </svg>
+            </span>
+            LINE相談
+          </a>
+          <a
+            href="tel:0120691924"
+            class="inline-flex items-center justify-center gap-1 rounded-full bg-main px-2.5 py-2 text-[10px] font-bold leading-tight text-white shadow-md transition-transform hover:scale-105 sm:gap-2 sm:px-5 sm:py-3 sm:text-sm"
+          >
+            <svg class="h-3.5 w-3.5 shrink-0 sm:h-5 sm:w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+              />
+            </svg>
+            今すぐ電話する
+          </a>
+        </div>
+      </div>
+      <img
+        src="assets/ヒーロー.webp"
+        alt="苫小牧 くるまの警告灯119番。警告灯のご相談、公式LINE、費用比較、25年の実績のご案内。"
+        class="block h-auto w-full object-cover object-top"
+        decoding="async"
+        fetchpriority="high"
+      />
+
+      <!-- ヒーロー直下：LINE相談CTA -->
+      <div class="border-t border-slate-200 bg-white px-2 py-2.5 sm:px-3 sm:py-4">
+        <a
+          href="#"
+          class="mx-auto flex max-w-md flex-col items-stretch justify-between rounded-2xl bg-[#06C755] px-3 py-3 text-white shadow-[0_6px_16px_rgba(0,0,0,0.12)] transition-transform hover:scale-105 sm:px-5 sm:py-4"
+          aria-label="【無料】写真を送るだけで概算見積もり。LINE相談はこちら"
+        >
+          <div class="flex items-center gap-3 sm:gap-4">
+            <span
+              class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/25 sm:h-12 sm:w-12"
+              aria-hidden="true"
+            >
+              <svg class="h-7 w-7 sm:h-8 sm:w-8" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="#ffffff"
+                  d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.345.281-.63.63-.63.076 0 .156.023.224.06.239.133.387.38.387.635v2.043l2.395-3.024c.101-.129.257-.209.427-.209.061 0 .125.012.188.04.277.111.415.391.329.662-.021.063-.057.121-.103.171l-2.018 2.553 2.603 3.381c.151.195.17.455.053.662zm-4.885.125c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629v-4.89c0-.345.282-.63.63-.63.347 0 .628.285.628.63v4.89zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.25h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.973 4.114 9.053 9.555 9.73.372.08.879.244.995.562.115.317.079.812.038 1.129l-.164 1.02c-.045.301-.24 1.186 1.049.647 1.291-.539 6.916-4.086 9.436-6.975C23.176 14.393 24 12.458 24 10.314"
+                />
+              </svg>
+            </span>
+            <div class="min-w-0 flex-1 text-center leading-snug">
+              <p class="relative -translate-x-3 text-[clamp(0.95rem,3.8vw,1.35rem)] font-black tracking-tight sm:-translate-x-4">
+                【無料】写真を送るだけで<br />概算見積もり！
+              </p>
+            </div>
+          </div>
+          <p
+            class="mt-3 self-center rounded-full bg-accent px-3 py-1.5 text-center text-[10px] font-black text-sub shadow-sm sm:text-[11px]"
+          >
+            LINE相談はこちら
+          </p>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 波形 -->
+  <div class="relative -mt-px leading-none text-white">
+    <svg class="w-full h-12 sm:h-16 text-white" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="currentColor" d="M0,60 C300,120 600,0 900,60 C1050,90 1150,90 1200,75 L1200,120 L0,120 Z" />
+    </svg>
+  </div>
+
+  <!-- ========== Problem（画像のみ：スマホ＝縦／PC＝横） ========== -->
+  <section class="lp-section relative -top-px overflow-hidden bg-white" aria-labelledby="problem-title">
+    <h2 id="problem-title" class="sr-only">
+      警告灯が点灯…どうすればいい？と一人で悩んでいませんか？よくあるお悩み
+    </h2>
+    <div class="mx-auto w-full max-w-lg md:max-w-2xl lg:max-w-4xl">
+      <picture>
+        <source media="(min-width: 768px)" srcset="assets/横１.webp" type="image/webp" />
+        <img
+          src="assets/縦１.webp"
+          alt="よくあるお悩み"
+          class="block h-auto w-full"
+          loading="lazy"
+          decoding="async"
+        />
+      </picture>
+    </div>
+  </section>
+
+  <div class="relative -mt-px leading-none text-slate-50 wave-flip">
+    <svg class="w-full h-10 sm:h-14 text-white" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="currentColor" d="M0,40 C200,100 400,20 600,50 C800,80 1000,20 1200,60 L1200,0 L0,0 Z" />
+    </svg>
+  </div>
+
+  <!-- ========== Solution（ランプ画像メイン・Problem と同レイアウト） ========== -->
+  <section class="lp-section relative -top-px overflow-hidden bg-white" aria-labelledby="solution-title">
+    <h2 id="solution-title" class="sr-only">
+      お客様の「安く、早く、確実に直したい」というお悩みに誠実に向き合います。
+    </h2>
+    <div class="mx-auto w-full max-w-lg md:max-w-2xl lg:max-w-4xl">
+      <picture>
+        <source media="(min-width: 768px)" srcset="assets/ランプ横.webp" type="image/webp" />
+        <img
+          src="assets/ランプ縦.webp"
+          alt=""
+          class="block h-auto w-full"
+          loading="lazy"
+          decoding="async"
+        />
+      </picture>
+    </div>
+  </section>
+
+  <div class="relative leading-none text-white">
+    <svg class="w-full h-10 sm:h-14 text-sub/5" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="currentColor" class="text-slate-100" d="M0,80 C400,20 800,100 1200,40 L1200,120 L0,120 Z" />
+    </svg>
+  </div>
+
+  <!-- ========== Feature DPF ========== -->
+  <section class="lp-section py-16 px-4 sm:px-6 bg-slate-100" aria-labelledby="feature-title">
+    <div class="max-w-4xl mx-auto">
+      <h2 id="feature-title" class="text-xl sm:text-2xl font-bold text-center text-sub mb-10 px-2">
+        <span class="text-yellow-500">【圧倒的コストダウン】</span><br class="sm:hidden" />
+        DPF・排気系の異常なら「洗浄」が正解です！
+      </h2>
+
+      <!-- 比較表 -->
+      <div class="overflow-x-auto rounded-2xl shadow-md border border-slate-200 bg-white mb-12">
+        <table class="w-full min-w-[320px] text-sm sm:text-base">
+          <thead>
+            <tr class="bg-sub text-white">
+              <th class="text-left py-3 px-4 font-bold">比較</th>
+              <th class="text-left py-3 px-4 font-bold">費用</th>
+              <th class="text-left py-3 px-4 font-bold">期間</th>
+              <th class="text-left py-3 px-4 font-bold">メリット</th>
+            </tr>
+          </thead>
+          <tbody class="text-sub">
+            <tr class="border-t border-slate-200">
+              <td class="py-4 px-4 font-bold">ディーラー（部品交換）</td>
+              <td class="py-4 px-4">50万円〜</td>
+              <td class="py-4 px-4">1週間</td>
+              <td class="py-4 px-4">新品になる</td>
+            </tr>
+            <tr class="border-t border-slate-200 bg-main/5">
+              <td class="py-4 px-4 font-bold text-main">当店（ドライアイス洗浄）</td>
+              <td class="py-4 px-4 font-bold">7万円〜</td>
+              <td class="py-4 px-4 font-bold">最短3時間</td>
+              <td class="py-4 px-4">圧倒的に安く、新車時の走りが復活</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 洗浄イメージ -->
+      <div class="rounded-2xl overflow-hidden shadow-lg border-2 border-sub/20 bg-sub">
+        <p class="text-center text-white text-sm font-bold py-3 px-2">ドライアイス洗浄（イメージ）</p>
+        <figure class="m-0 bg-sub">
+          <div class="relative aspect-[16/10] max-h-[420px] w-full overflow-hidden">
+            <img
+              src="assets/洗浄.webp"
+              alt="エンジンシリンダーのカーボン（イメージ）"
+              class="absolute inset-0 h-full w-full object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <figcaption class="px-3 py-2.5 text-center text-xs font-bold text-white/90">
+            エンジンシリンダーのカーボン
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="relative leading-none">
+    <svg class="w-full h-10 sm:h-14 text-slate-100" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="currentColor" d="M0,30 C300,90 600,10 900,50 C1050,70 1150,60 1200,45 L1200,120 L0,120 Z" />
+    </svg>
+  </div>
+
+  <!-- ========== Process（step.webp：全幅・全画面幅） ========== -->
+  <section class="lp-section py-16 px-4 sm:px-6 bg-white" aria-labelledby="process-title">
+    <div class="mx-auto max-w-lg md:max-w-2xl lg:max-w-4xl">
+      <h2 id="process-title" class="text-xl sm:text-2xl font-bold text-center text-sub mb-10 sm:mb-12">ご利用の流れ</h2>
+      <img
+        src="assets/step.webp"
+        alt="ご利用の流れ：撮る・送る・診断の3ステップ"
+        class="block h-auto w-full"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+  </section>
+
+  <div class="relative -mt-px leading-none wave-flip">
+    <svg class="w-full h-10 sm:h-14 text-sub" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="currentColor" class="opacity-10" d="M0,60 C400,0 800,120 1200,50 L1200,120 L0,120 Z" />
+    </svg>
+  </div>
+
+  <!-- ========== Trust ========== -->
+  <section class="lp-section py-16 px-4 sm:px-6 bg-sub text-white" aria-labelledby="trust-title">
+    <div class="max-w-3xl mx-auto">
+      <h2 id="trust-title" class="text-xl sm:text-2xl font-bold text-center mb-10">信頼と実績</h2>
+      <div class="rounded-2xl bg-white/10 backdrop-blur-sm p-6 sm:p-8 mb-10 border border-white/20">
+        <p class="font-bold text-lg sm:text-xl text-center leading-relaxed">
+          整備歴25年、地域に根ざした施工実績
+        </p>
+      </div>
+      <ul class="grid sm:grid-cols-3 gap-4 mb-12 text-center text-sm sm:text-base font-bold">
+        <li class="rounded-xl bg-white/10 py-4 px-3 border border-white/15">強引な勧誘一切なし</li>
+        <li class="rounded-xl bg-white/10 py-4 px-3 border border-white/15">明朗会計</li>
+        <li class="rounded-xl bg-white/10 py-4 px-3 border border-white/15">代車無料（要予約）</li>
+      </ul>
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <h3 class="font-bold text-accent mb-3">店舗情報</h3>
+          <p class="text-white/90 leading-relaxed mb-4">
+            〒059-1305<br />
+            北海道苫小牧市沼ノ端中央6丁目8-5
+          </p>
+          <a
+            href="https://maps.google.com/?q=%E5%8C%97%E6%B5%B7%E9%81%93%E8%8B%AB%E5%B0%8F%E7%89%A7%E5%B8%82%E6%B2%BC%E3%83%8E%E7%AB%AF%E4%B8%AD%E5%A4%AE6%E4%B8%81%E7%9B%AE8-5"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 rounded-xl bg-accent text-sub font-bold hover:scale-105 transition-transform shadow-lg"
+          >Googleマップで見る</a>
+        </div>
+        <div class="rounded-2xl overflow-hidden border-4 border-white/30 shadow-xl aspect-video bg-white/10">
+          <iframe
+            title="店舗の地図（苫小牧市沼ノ端中央）"
+            class="w-full h-full min-h-[220px]"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=%E5%8C%97%E6%B5%B7%E9%81%93%E8%8B%AB%E5%B0%8F%E7%89%A7%E5%B8%82%E6%B2%BC%E3%83%8E%E7%AB%AF%E4%B8%AD%E5%A4%AE6%E4%B8%81%E7%9B%AE8-5&hl=ja&z=17&output=embed"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="relative leading-none">
+    <svg class="w-full h-10 sm:h-14 text-sub" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="currentColor" d="M0,90 C300,30 900,100 1200,50 L1200,120 L0,120 Z" />
+    </svg>
+  </div>
+
+  <!-- ========== CTA ========== -->
+  <section class="lp-section py-16 px-4 sm:px-6 bg-accent pb-24 md:pb-16" aria-labelledby="cta-title">
+    <div class="max-w-2xl mx-auto cta-stripe-border rounded-3xl p-8 sm:p-10 bg-accent">
+      <h2 id="cta-title" class="text-lg sm:text-xl font-bold text-center text-sub leading-relaxed mb-6">
+        その警告灯、放置は危険です。手遅れになる前に、今すぐご相談ください。
+      </h2>
+      <ul class="mb-8 space-y-3 text-sm sm:text-base leading-relaxed">
+        <li class="flex gap-3 rounded-xl bg-white/40 px-4 py-3 border border-sub/10">
+          <span class="shrink-0 font-black text-main" aria-hidden="true">✓</span>
+          <span class="min-w-0 font-bold !text-neutral-950">24時間受付中。返信は営業時間内に順次いたします</span>
+        </li>
+        <li class="flex gap-3 rounded-xl bg-white/40 px-4 py-3 border border-sub/10">
+          <span class="shrink-0 font-black text-main" aria-hidden="true">✓</span>
+          <span class="min-w-0 font-bold !text-neutral-950">写真だけで概算見積もり</span>
+        </li>
+        <li class="flex gap-3 rounded-xl bg-white/40 px-4 py-3 border border-sub/10">
+          <span class="shrink-0 font-black text-main" aria-hidden="true">✓</span>
+          <span class="min-w-0 font-bold !text-neutral-950">プロが直接お答えします</span>
+        </li>
+      </ul>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-stretch">
+        <a
+          href="#"
+          class="inline-flex flex-1 items-center justify-center gap-2 py-4 px-6 rounded-2xl bg-[#06C755] text-white font-bold text-lg shadow-lg hover:scale-105 transition-transform"
+        >
+          <svg class="h-7 w-7 shrink-0" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              fill="#ffffff"
+              d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.345.281-.63.63-.63.076 0 .156.023.224.06.239.133.387.38.387.635v2.043l2.395-3.024c.101-.129.257-.209.427-.209.061 0 .125.012.188.04.277.111.415.391.329.662-.021.063-.057.121-.103.171l-2.018 2.553 2.603 3.381c.151.195.17.455.053.662zm-4.885.125c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629v-4.89c0-.345.282-.63.63-.63.347 0 .628.285.628.63v4.89zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.25h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.973 4.114 9.053 9.555 9.73.372.08.879.244.995.562.115.317.079.812.038 1.129l-.164 1.02c-.045.301-.24 1.186 1.049.647 1.291-.539 6.916-4.086 9.436-6.975C23.176 14.393 24 12.458 24 10.314"
+            />
+          </svg>
+          LINEで無料相談する
+        </a>
+        <a
+          href="tel:0120691924"
+          class="flex-1 text-center py-4 px-6 rounded-2xl bg-sub text-white font-bold text-lg shadow-lg hover:scale-105 transition-transform border-2 border-sub"
+        >電話で問い合わせる</a>
+      </div>
+      <p class="text-center text-sub/70 text-xs mt-6">※電話番号・LINE URLは実際のものに差し替えてください</p>
+    </div>
+  </section>
+
+  <footer class="py-8 text-center text-sm text-slate-500 bg-slate-100 hidden md:block">
+    © くるまの警告灯119番（苫小牧）. All rights reserved.
+  </footer>
+
+  <!-- スマホ固定フッター（ヒーロー下と同一デザイン） -->
+  <div
+    class="fixed bottom-0 left-0 right-0 z-50 md:hidden flex justify-center border-t-2 border-slate-200 bg-white p-2 shadow-[0_-8px_30px_rgba(0,0,0,0.12)]"
+    style="padding-bottom: max(0.5rem, env(safe-area-inset-bottom));"
+  >
+    <a
+      href="#"
+      class="mx-auto flex w-full max-w-md flex-col items-stretch gap-2.5 rounded-xl bg-[#22C55E] px-3 py-3 text-white shadow-lg hover:scale-105 transition-transform sm:px-4 sm:py-3.5"
+      aria-label="【無料】写真を送るだけで概算見積もり。LINE相談はこちら"
+    >
+      <div class="flex items-center gap-3 sm:gap-3.5">
+        <span
+          class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/25 sm:h-11 sm:w-11"
+          aria-hidden="true"
+        >
+          <svg class="h-6 w-6 sm:h-7 sm:w-7" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              fill="#ffffff"
+              d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.345.281-.63.63-.63.076 0 .156.023.224.06.239.133.387.38.387.635v2.043l2.395-3.024c.101-.129.257-.209.427-.209.061 0 .125.012.188.04.277.111.415.391.329.662-.021.063-.057.121-.103.171l-2.018 2.553 2.603 3.381c.151.195.17.455.053.662zm-4.885.125c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629v-4.89c0-.345.282-.63.63-.63.347 0 .628.285.628.63v4.89zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.25h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.973 4.114 9.053 9.555 9.73.372.08.879.244.995.562.115.317.079.812.038 1.129l-.164 1.02c-.045.301-.24 1.186 1.049.647 1.291-.539 6.916-4.086 9.436-6.975C23.176 14.393 24 12.458 24 10.314"
+            />
+          </svg>
+        </span>
+        <p class="relative min-w-0 flex-1 -translate-x-3 text-center text-base font-black leading-snug sm:-translate-x-4 sm:text-lg">
+          【無料】写真を送るだけで<br />概算見積もり！
+        </p>
+      </div>
+      <p
+        class="self-center rounded-full bg-accent px-3 py-1 text-center text-[10px] font-black text-sub shadow-sm sm:text-[11px]"
+      >
+        LINE相談はこちら
+      </p>
+    </a>
+  </div>
+
+</body>
+</html>
