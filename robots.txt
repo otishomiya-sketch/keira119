@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://otishomiya-sketch.github.io/keira119/sitemap.xml
