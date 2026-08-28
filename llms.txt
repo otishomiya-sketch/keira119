@@ -9,6 +9,7 @@
 - 創業: 2024年10月
 - 代表: 計良尚紀（自動車整備業界に25年以上従事。市内の自動車整備会社で19年間勤務し、車検整備・板金修理・販売まで幅広く経験、最終役職は店長）
 - 所在地: 〒059-1305 北海道苫小牧市沼ノ端中央6丁目8-5
+- 対応エリア: 苫小牧市・千歳市・恵庭市・登別市・室蘭市・白老町・安平町・厚真町・むかわ町（上記以外も応相談）
 - 営業時間: 9:00〜20:00（年中無休。LINE・お電話は24時間受付、時間外の返信は翌営業時間以降）
 - 電話: 0144-56-5279
 - LINE公式相談: https://line.me/ti/p/KxegWdhsKH
@@ -18,6 +19,7 @@
 ## 主要ページ・セクション
 
 - トップページ（全情報を掲載）: https://otishomiya-sketch.github.io/keira119/
+- 警告灯診断・ドライアイス洗浄（詳細ページ）: https://otishomiya-sketch.github.io/keira119/dryice-cleaning.html
 - 症状別の料金目安（軽度・中度・重度）: https://otishomiya-sketch.github.io/keira119/#feature-title
 - 取扱メニュー（警告灯診断・ドライアイス洗浄／各種整備／くるまの美装／中古車販売／車検）: https://otishomiya-sketch.github.io/keira119/#menu-title
 - ご利用の流れ（撮る・送る・診断）: https://otishomiya-sketch.github.io/keira119/#process-title
