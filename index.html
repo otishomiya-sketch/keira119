@@ -19,9 +19,16 @@
   <meta property="og:title" content="苫小牧 くるまの警告灯119番 | LINEで無料診断" />
   <meta property="og:description" content="警告灯が点灯したら、まず公式LINEへ。25年のベテラン整備士が即時診断。DPFドライアイス洗浄で圧倒的コストダウン。" />
   <meta property="og:image" content="https://otishomiya-sketch.github.io/keira119/assets/ヒーロー.webp" />
+  <meta property="og:image:width" content="1888" />
+  <meta property="og:image:height" content="2256" />
+  <meta property="og:image:alt" content="苫小牧 くるまの警告灯119番。警告灯のご相談、公式LINE、費用比較、25年の実績のご案内。" />
   <meta property="og:url" content="https://otishomiya-sketch.github.io/keira119/" />
   <meta property="og:site_name" content="苫小牧 くるまの警告灯119番" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="苫小牧 くるまの警告灯119番 | LINEで無料診断" />
+  <meta name="twitter:description" content="警告灯が点灯したら、まず公式LINEへ。25年のベテラン整備士が即時診断。DPFドライアイス洗浄で圧倒的コストダウン。" />
+  <meta name="twitter:image" content="https://otishomiya-sketch.github.io/keira119/assets/ヒーロー.webp" />
+  <meta name="twitter:image:alt" content="苫小牧 くるまの警告灯119番。警告灯のご相談、公式LINE、費用比較、25年の実績のご案内。" />
 
   <!-- 構造化データ（LocalBusiness） -->
   <script type="application/ld+json">
@@ -69,6 +76,14 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "まず公式LINEに、警告灯や気になる箇所の写真を1枚送ってください。ベテラン整備士が概算診断を行います。お電話でのご相談も24時間受付しています（営業時間9:00〜20:00。時間外や作業中にいただいた分の返信・折り返しは翌営業時間以降になります）。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "警告灯が点いても、そのまま運転を続けて大丈夫ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "警告灯の色によって緊急度が異なります。赤色の警告灯（油圧・水温・ブレーキなど）は重大な異常のサインです。安全な場所に停車し、無理に走行を続けないでください。黄色・オレンジ色の警告灯（エンジンチェックランプなど）は多くの場合すぐに走行不能になるわけではありませんが、放置すると症状が進み費用も上がりやすいため、早めのご相談をおすすめします。判断に迷う場合は、まず公式LINEに写真を送ってご相談ください。"
         }
       },
       {
@@ -150,79 +165,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            base: '#FFFFFF',
-            main: '#E63946',
-            sub: '#1D3557',
-            accent: '#FFB703',
-          },
-          fontFamily: {
-            sans: ['"Noto Sans JP"', 'sans-serif'],
-          },
-        },
-      },
-    };
-  </script>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Noto Sans JP', sans-serif;
-    }
-
-    /* ページ読み込み時に一度だけ再生するフェードイン（スクロール連動アニメーションは
-       ブラウザによって透明度・位置がスクロール位置で揺れ戻り、隣接セクションと文字が
-       重なって見える不具合があったため廃止） */
-    .lp-section {
-      opacity: 1;
-      transform: none;
-      animation: lp-reveal-fallback 0.85s ease-out both;
-    }
-    @keyframes lp-reveal-fallback {
-      from {
-        opacity: 0;
-        transform: translateY(24px);
-      }
-      to {
-        opacity: 1;
-        transform: none;
-      }
-    }
-
-    /* CTA：黒の斜線ストライプ枠 */
-    .cta-stripe-border {
-      border: 4px solid #000;
-      background-image: repeating-linear-gradient(
-        -45deg,
-        transparent,
-        transparent 6px,
-        rgba(0, 0, 0, 0.12) 6px,
-        rgba(0, 0, 0, 0.12) 12px
-      );
-      background-origin: border-box;
-      background-clip: padding-box;
-      box-shadow: inset 0 0 0 4px #FFB703;
-    }
-
-    /* 波形セパレーター反転用 */
-    .wave-flip {
-      transform: rotate(180deg);
-    }
-
-    /* スマホ用フッター分の余白 */
-    @media (max-width: 767px) {
-      body {
-        padding-bottom: 9rem;
-      }
-    }
-
-  </style>
+  <link rel="stylesheet" href="assets/styles.0557951133.css" />
 </head>
 <body class="bg-base text-sub antialiased overflow-x-hidden">
   <!-- ========== Hero（ヘッダー＋画像） ========== -->
@@ -253,7 +196,7 @@
         </a>
         <div class="flex max-w-[58%] shrink-0 flex-col items-stretch gap-1.5 sm:max-w-none sm:flex-row sm:items-center sm:gap-2">
           <a
-            href="https://line.me/ti/p/KxegWdhsKH" target="_blank" rel="noopener"
+            href="https://line.me/ti/p/KxegWdhsKH" target="_blank" rel="noopener noreferrer"
             class="inline-flex items-center justify-center gap-1 rounded-full bg-[#06C755] px-2.5 py-2 text-[10px] font-bold leading-tight text-white shadow-md transition-transform hover:scale-105 sm:gap-2 sm:px-4 sm:py-3 sm:text-sm"
           >
             <span class="flex h-4 w-4 shrink-0 items-center justify-center rounded-sm bg-white sm:h-5 sm:w-5" aria-hidden="true">
@@ -295,7 +238,7 @@
       <!-- ヒーロー直下：LINE相談CTA -->
       <div class="border-t border-slate-200 bg-white px-2 py-2.5 sm:px-3 sm:py-4">
         <a
-          href="https://line.me/ti/p/KxegWdhsKH" target="_blank" rel="noopener"
+          href="https://line.me/ti/p/KxegWdhsKH" target="_blank" rel="noopener noreferrer"
           class="mx-auto flex max-w-md flex-col items-stretch justify-between rounded-2xl bg-[#06C755] px-3 py-3 text-white shadow-[0_6px_16px_rgba(0,0,0,0.12)] transition-transform hover:scale-105 sm:px-5 sm:py-4"
           aria-label="【無料】写真を送るだけで概算見積もり。LINE相談はこちら"
         >
@@ -329,6 +272,17 @@
       </div>
     </div>
   </header>
+
+  <!-- ========== ページ内ナビゲーション ========== -->
+  <nav aria-label="ページ内目次" class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur-sm">
+    <div class="mx-auto flex w-full max-w-lg gap-2 overflow-x-auto px-3 py-2 text-sm font-bold text-sub sm:max-w-2xl sm:justify-center sm:gap-4 lg:max-w-4xl">
+      <a href="#feature-title" class="shrink-0 rounded-full px-3 py-2.5 hover:bg-slate-100">料金の目安</a>
+      <a href="#menu-title" class="shrink-0 rounded-full px-3 py-2.5 hover:bg-slate-100">取扱メニュー</a>
+      <a href="#process-title" class="shrink-0 rounded-full px-3 py-2.5 hover:bg-slate-100">ご利用の流れ</a>
+      <a href="#trust-title" class="shrink-0 rounded-full px-3 py-2.5 hover:bg-slate-100">実績・店舗情報</a>
+      <a href="#faq-title" class="shrink-0 rounded-full px-3 py-2.5 hover:bg-slate-100">よくある質問</a>
+    </div>
+  </nav>
 
   <!-- 波形 -->
   <div class="relative -mt-px leading-none text-white">
@@ -433,12 +387,21 @@
           </tbody>
         </table>
       </div>
-      <p class="text-center text-xs text-slate-500 mb-12 px-2">※費用・期間は車種や状態により異なります。正式なお見積りは診断後にご提示します。</p>
+      <p class="text-center text-xs text-slate-500 mb-6 px-2">※費用・期間は車種や状態により異なります。正式なお見積りは診断後にご提示します。</p>
+
+      <div class="mb-12 rounded-2xl border border-amber-200 bg-amber-50 p-5 sm:p-6">
+        <h3 class="font-bold text-amber-800 mb-2 text-sm sm:text-base">ドライアイス洗浄が向いているケース・向かないケース</h3>
+        <ul class="space-y-1.5 text-sm text-slate-700 leading-relaxed">
+          <li>・<span class="font-bold">向いているケース：</span>カーボン・すすの堆積が主な原因で、DPF本体が物理的に破損していない場合</li>
+          <li>・<span class="font-bold">向かないケース：</span>DPF本体にひび割れ・溶損など物理的な損傷がある場合は、洗浄では改善せず交換が必要です</li>
+          <li>・<span class="font-bold">リスク：</span>洗浄を行っても症状が改善しない可能性があります。その場合、分解整備費など追加費用が発生することがあります</li>
+        </ul>
+      </div>
 
       <!-- 比較表直後のミニCTA -->
       <div class="mb-12 flex flex-col sm:flex-row gap-3 justify-center">
         <a
-          href="https://line.me/ti/p/KxegWdhsKH" target="_blank" rel="noopener"
+          href="https://line.me/ti/p/KxegWdhsKH" target="_blank" rel="noopener noreferrer"
           class="inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-2xl bg-[#06C755] text-white font-bold text-base shadow-lg hover:scale-105 transition-transform"
         >
           <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -616,7 +579,7 @@
 
       <div class="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
         <a
-          href="https://line.me/ti/p/KxegWdhsKH" target="_blank" rel="noopener"
+          href="https://line.me/ti/p/KxegWdhsKH" target="_blank" rel="noopener noreferrer"
           class="inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-2xl bg-[#06C755] text-white font-bold text-base shadow-lg hover:scale-105 transition-transform"
         >
           <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -733,6 +696,13 @@
         </details>
         <details class="group rounded-xl border border-slate-200 bg-slate-50 open:bg-white open:shadow-md">
           <summary class="flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 font-bold text-sub">
+            <span>警告灯が点いても、そのまま運転を続けて大丈夫ですか？</span>
+            <span class="shrink-0 text-main transition-transform group-open:rotate-45" aria-hidden="true">＋</span>
+          </summary>
+          <p class="px-5 pb-4 text-sm sm:text-base text-slate-600 leading-relaxed">警告灯の色によって緊急度が異なります。<span class="font-bold text-main">赤色</span>の警告灯（油圧・水温・ブレーキなど）は重大な異常のサインです。安全な場所に停車し、無理に走行を続けないでください。<span class="font-bold text-amber-700">黄色・オレンジ色</span>の警告灯（エンジンチェックランプなど）は多くの場合すぐに走行不能になるわけではありませんが、放置すると症状が進み費用も上がりやすいため、早めのご相談をおすすめします。判断に迷う場合は、まず公式LINEに写真を送ってご相談ください。</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-slate-50 open:bg-white open:shadow-md">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 font-bold text-sub">
             <span>LINE相談は本当に無料ですか？</span>
             <span class="shrink-0 text-main transition-transform group-open:rotate-45" aria-hidden="true">＋</span>
           </summary>
@@ -826,7 +796,7 @@
       </ul>
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-stretch">
         <a
-          href="https://line.me/ti/p/KxegWdhsKH" target="_blank" rel="noopener"
+          href="https://line.me/ti/p/KxegWdhsKH" target="_blank" rel="noopener noreferrer"
           class="inline-flex flex-1 items-center justify-center gap-2 py-4 px-6 rounded-2xl bg-[#06C755] text-white font-bold text-lg shadow-lg hover:scale-105 transition-transform"
         >
           <svg class="h-7 w-7 shrink-0" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -858,7 +828,7 @@
     style="padding-bottom: max(0.5rem, env(safe-area-inset-bottom));"
   >
     <a
-      href="https://line.me/ti/p/KxegWdhsKH" target="_blank" rel="noopener"
+      href="https://line.me/ti/p/KxegWdhsKH" target="_blank" rel="noopener noreferrer"
       class="mx-auto flex w-full max-w-md flex-col items-stretch gap-2.5 rounded-xl bg-[#22C55E] px-3 py-3 text-white shadow-lg hover:scale-105 transition-transform sm:px-4 sm:py-3.5"
       aria-label="【無料】写真を送るだけで概算見積もり。LINE相談はこちら"
     >

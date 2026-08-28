@@ -1,0 +1,7 @@
+{
+  "name": "lp2-build",
+  "private": true,
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}
